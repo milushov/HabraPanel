@@ -1,0 +1,136 @@
+<style>
+	body
+	{
+		margin: 0;
+	}
+	#topbar
+	{
+		width: 100%;
+		height: 40px;
+		background-color: #555d6e;
+		color: #d2d3d7;
+		text-align: left;
+		z-index: 3243423;
+	}
+	
+	#topbar .fix-size
+	{
+		max-width: 1200px;		
+		min-width: 650px;
+		height: 100%;
+		padding: 0 30px;
+		
+		position: relative;
+		margin: 0 auto;
+		
+	}
+	
+	#topbar .profile
+	{
+		height: 40px;
+		line-height: 40px;
+		vertical-align: middle;
+	}	
+	#topbar a
+	{
+		color: #d2d3d7;
+		text-decoration: none;
+	}
+	
+	#topbar a:hover
+	{
+		color: #ebecf1;
+	}
+	
+	#topbar ol
+	{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	#topbar li
+	{
+		display: inline-block;
+		padding: 0 5px;
+	}
+	
+	#topbar .pl_count
+	{
+		margin-left: 5px;
+		padding: 3px;
+		background-color: #e84c3d;
+		color: #fff;
+		border-radius: 3px;
+		font-size: 7pt;
+	}
+	
+	#topbar .pl_search_form
+	{
+		position: absolute;
+		right: 5px;
+		top: 7px;
+	}
+	
+	#topbar input
+	{
+		width: 200px;
+	}
+	
+	.pl_logo
+	{
+		display: block;
+		position: absolute;
+		right: 0;
+		padding-left:30px;
+		
+		width: 240px;
+		height: 120px;
+		background: url("/images/bg-multilogo.png") 30px -127px no-repeat;
+	}
+	#layout {
+		margin-top: 40px!important;
+		}
+	.sup{
+		font-size: 0.7em;
+		vertical-align:super;
+	}
+	#rating{
+		color: #C6C;
+	}
+	#karma{
+		color: #6C6;
+	}
+</style>
+<div id="topbar">
+	<div class="fix-size">
+		<ol>
+			<li>
+				<div class="profile">
+					<span id="pl_username">MyUsername</span>
+				</div>
+			</li>
+			
+			<li>
+				<a id="pl_conf" href="/conversations/">Диалоги</a>
+			</li>
+			
+			<li>
+				<a id="pl_tracker" href="/tracker/">Трекер</a>
+			</li>
+			
+			<li id="pl_fav_link"></li>
+			<li>
+				<a href="https://auth.habrahabr.ru/settings/">Настройки</a>
+			</li>
+			<li>
+				<a href="http://habrahabr.ru/topic/add/">Добавить пост</a>
+			</li>
+			<li class="pl_search_form">
+				<form name="search" method="get" action="/search/">
+				  <input type="text" name="q" x-webkit-speech="" speech="" tabindex="1" autocomplete="off">
+				</form>
+			</li>
+		</ol>
+	</div>
+</div>

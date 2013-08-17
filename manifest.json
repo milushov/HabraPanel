@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+
+    "name": "ХабраПанель",
+    "version": "0.0.2",
+
+    "icons": {
+        "32": "icon/32.png"
+    },
+
+    "permissions": [
+		"tabs", "*://*.habrahabr.ru/*"
+	],
+
+    "background": {
+		"scripts": ["js/background.js"]
+	},
+	
+	"web_accessible_resources": ["html/panel.html"]
+ }
