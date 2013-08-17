@@ -18,6 +18,11 @@ function createTopBar(topBar)
 	$("#pl_username").html('<a href="http://habrahabr.ru/users/' + username + '/"><b>' + username + '</b></a><sup id="karma" class="sup"></sup><sup class="sup">  </sup><sup class="sup" id="rating"></sup>');
 	$("#pl_fav_link").prepend('<a href="http://habrahabr.ru/users/' + username +'/favorites/">Избранное</a>');
 
+	var url_out=$('a:contains("выйти")').attr('href');
+
+	if(url_out)
+		$('.out').html('<a href="'+url_out+'">Выйти</a>');
+
 	var pl_count = $('.count');
 	for(i=0;i<pl_count.length;i++)
 	{
